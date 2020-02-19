@@ -1,0 +1,7 @@
+md5: 7088b907a2ca9129eb2e454d7487ed2b
+outs:
+- md5: f20b50b44fdef367a225d41f747a0963
+  path: mobilenet_v2.pth
+  cache: true
+  metric: false
+  persist: false

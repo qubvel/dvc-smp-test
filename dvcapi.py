@@ -1,27 +1,27 @@
+import torch
 import segmentation_models_pytorch as smp
 
 
-WEIGHTS = dict(
-    resnet34="weights/resnet34-333f7ec4.pth",
-    resnet18="weights/resnet18-5c106cde.pth",
-)
+def get_encoder_weights_path(encoder_name, encoder_weights):
+    return "weights/{}/{}.pth".format(encoder_weights, encoder_name)
 
 
-def load_weights(summon, model, weights_file):
-    summon.pull(weights_file)
-    with open(weights_file, mode='rb') as fd:
-        print("Loading weights...") 
+def load_weights(summon, model, weights_file_path):
+    summon.pull(weights_file_path)
+    with open(weights_file_path, mode='rb') as fd:
         weights = torch.load(fd)
         model.load_state_dict(weights)
     return model
 
 
-def get_model(summon, **kwargs):
-    arch = kwargs.pop("arch")
-    encoder_name = kwargs.pop("encoder_name")
-    encoder_weights = kwargs.pop("encoder_weights", None)
-    kwargs["encoder_weights"] = None
-    model = smp.__dict__[arch](**kwargs)
+def get_model(summon, model, encoder_name="resnet34", encoder_weights="imagenet", **kwargs):
+    if model not in smp.__dict__:
+        raise ValueError("No such model architecture ({}) in SMP.".format(model))
+
+    model = smp.__dict__[model](encoder_name=encoder_name, encoder_weights=None, **kwargs)
+
     if encoder_weights is not None:
-        load_weights(summon, model.encoder, WEIGHTS[encoder_name])
+        path = get_encoder_weights_path(encoder_name, encoder_weights)
+        load_weights(summon, model.encoder, path)
+
     return model

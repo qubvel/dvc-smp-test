@@ -1,0 +1,7 @@
+md5: 4e1b63e65b70e4c76b377e8471be90d5
+outs:
+- md5: 725e016a97b171bb9f74e31c4dd6891e
+  path: senet154.pth
+  cache: true
+  metric: false
+  persist: false

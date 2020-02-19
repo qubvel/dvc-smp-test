@@ -1,2 +1,5 @@
+['remote "publicremote"']
+    url = https://minio.aeronetlab.space/public/dvc/
+
 [core]
-    remote = myremote
+    remote = publicremote

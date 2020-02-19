@@ -1,0 +1,7 @@
+md5: 0100aa39c799b6c8f44e50b423d9b844
+outs:
+- md5: ad5c3ac60d248462616d7f1077a84611
+  path: dpn92.pth
+  cache: true
+  metric: false
+  persist: false

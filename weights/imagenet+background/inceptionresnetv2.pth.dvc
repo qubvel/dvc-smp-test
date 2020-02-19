@@ -1,0 +1,7 @@
+md5: 4787bd6b984e2535510538e39d2caa54
+outs:
+- md5: 034a38b1e72c185cccf2e01a9ad458ac
+  path: inceptionresnetv2.pth
+  cache: true
+  metric: false
+  persist: false

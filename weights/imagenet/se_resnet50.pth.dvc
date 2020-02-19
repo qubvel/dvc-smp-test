@@ -1,0 +1,7 @@
+md5: 142f082d29debbf925535d8968b314d8
+outs:
+- md5: 61e9180249761ae2f5fa5e2fa1cef6d7
+  path: se_resnet50.pth
+  cache: true
+  metric: false
+  persist: false

@@ -1,0 +1,7 @@
+md5: 049aa468eff9be44693832d3da917af9
+outs:
+- md5: c52c5c6bd4b483003e87320696c64366
+  path: inceptionv4.pth
+  cache: true
+  metric: false
+  persist: false

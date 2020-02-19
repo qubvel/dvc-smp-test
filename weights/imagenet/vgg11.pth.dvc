@@ -1,0 +1,7 @@
+md5: ea7c4f56d9f0d9a6d0f979a80534aa84
+outs:
+- md5: fb673175d8d80d8da8dd18aec6c2c548
+  path: vgg11.pth
+  cache: true
+  metric: false
+  persist: false

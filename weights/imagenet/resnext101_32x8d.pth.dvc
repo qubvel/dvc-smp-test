@@ -1,0 +1,7 @@
+md5: 05bd09ab4da908c4033e03598e65b488
+outs:
+- md5: 4454a42689454b94296e378762f2333f
+  path: resnext101_32x8d.pth
+  cache: true
+  metric: false
+  persist: false

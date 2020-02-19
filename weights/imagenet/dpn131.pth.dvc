@@ -1,0 +1,7 @@
+md5: 7a856f9267df987d6d888058b7ad7f68
+outs:
+- md5: 71e7844aa8646dc75494976c7c86241a
+  path: dpn131.pth
+  cache: true
+  metric: false
+  persist: false

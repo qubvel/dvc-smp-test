@@ -1,0 +1,7 @@
+md5: c1a153c560c58c9c7b26374c1719f300
+outs:
+- md5: 131266788f2d41563c941adb4b2ea70e
+  path: vgg19_bn.pth
+  cache: true
+  metric: false
+  persist: false

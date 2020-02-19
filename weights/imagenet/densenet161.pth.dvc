@@ -1,0 +1,7 @@
+md5: cc42348b5b5b9c0eddbd5d9c5bc2d610
+outs:
+- md5: 937288a0109c671eb6f9ae75a5938290
+  path: densenet161.pth
+  cache: true
+  metric: false
+  persist: false

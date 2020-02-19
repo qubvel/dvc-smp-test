@@ -1,0 +1,7 @@
+md5: a58fe5d0966f03eb7ae4303348d0c332
+outs:
+- md5: 9f6112aba6b27980ec00b183e1c95058
+  path: dpn98.pth
+  cache: true
+  metric: false
+  persist: false

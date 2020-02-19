@@ -1,5 +1,5 @@
 objects:
-    smp:
-        summon:
-            type: python
-            call: dvcapi.get_model
+  model:
+    summon:
+      type: python
+      call: dvcapi.get_model
