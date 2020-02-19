@@ -3,4 +3,3 @@ objects:
         summon:
             type: python
             call: dvcapi.get_model
-            args:
