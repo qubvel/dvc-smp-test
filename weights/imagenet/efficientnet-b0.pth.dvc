@@ -1,0 +1,7 @@
+md5: d621a2d0524a924c133adba62302d8c4
+outs:
+- md5: ee38ea12f04bd57e61b240e5b85f297f
+  path: efficientnet-b0.pth
+  cache: true
+  metric: false
+  persist: false
