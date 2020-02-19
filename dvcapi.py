@@ -22,6 +22,6 @@ def get_model(summon, **kwargs):
     encoder_weights = kwargs.pop("encoder_weights", None)
     kwargs["encoder_weights"] = None
     model = smp.__dict__[arch](**kwargs)
-    if encoder_weight is not None:
+    if encoder_weights is not None:
         load_weights(summon, model.encoder, WEIGHTS[encoder_name])
     return model
