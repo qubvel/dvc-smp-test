@@ -4,3 +4,4 @@ objects:
             type: python
             call: dvcapi.get_model
             args:
+                arch: Unet
